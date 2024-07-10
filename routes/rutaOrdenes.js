@@ -12,6 +12,6 @@ rutaOrden.get("/:id", servicioOrden.obtenerOrden)
 rutaOrden.put("/actualizar/estado/:id", servicioOrden.actualizarEstadoOrden)
 
 // ruta eliminar orden
-rutaOrden.delete("/delete/:id")
+rutaOrden.delete("/delete/:id", servicioOrden.eliminarOrden)
 
 module.exports = rutaOrden
